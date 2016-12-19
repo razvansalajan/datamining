@@ -44,8 +44,8 @@ public class BayesianServlet extends HttpServlet{
 		}
 		BufferedReader reader = null;
 		try {
-			//String path = getServletContext().getRealPath("/ski.arff");
-			String path = getServletContext().getRealPath("/contact-lenses.arff");
+			String path = getServletContext().getRealPath("/ski.arff");
+			//String path = getServletContext().getRealPath("/contact-lenses.arff");
 			reader = new BufferedReader(new FileReader(path));
 		} catch (FileNotFoundException e1) {
 			// TODO Auto-generated catch block
