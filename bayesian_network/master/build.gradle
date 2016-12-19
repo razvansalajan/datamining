@@ -1,0 +1,11 @@
+apply plugin: 'ear'
+repositories {    
+    mavenCentral()
+}
+dependencies {
+    deploy project(path:':web', configuration:'archives')
+    earlib group: 'nz.ac.waikato.cms.weka', name: 'weka-stable', version: '3.8.0'
+}
+ear {
+    baseName = "bayesian_network"
+}
