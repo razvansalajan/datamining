@@ -15,3 +15,10 @@ mild, false, sunny, high, none, yes
 mild, false, sunny, low, none, no
 cool, true, sunny, medium, none, yes
 cool, true, overcast, medium, snow, no
+cool, false, overcast, medium, snow, yes
+cool, false, sunny, medium, sleet, no
+mild, true, overcast, low, rain, no
+mild, true, overcast, medium, none, yes
+mild, true, overcast, high, snow, yes
+hot, false, sunny, high, none, yes
+hot, true, overcast, medium, none, yes

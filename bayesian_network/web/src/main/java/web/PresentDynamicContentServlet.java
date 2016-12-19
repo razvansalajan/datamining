@@ -1,23 +1,20 @@
 package web;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import weka.core.Instances;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import web.com.data_mining.core.BayesianNet;
-import weka.core.Instances;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class PresentDynamicContentServlet extends HttpServlet{
 	@Override
@@ -28,8 +25,8 @@ public class PresentDynamicContentServlet extends HttpServlet{
 	    List<String> list = new ArrayList<>();
 		BufferedReader reader = null;
 		try {
-			//String path = getServletContext().getRealPath("/ski.arff");
-			String path = getServletContext().getRealPath("/contact-lenses.arff");
+			String path = getServletContext().getRealPath("/ski.arff");
+			//String path = getServletContext().getRealPath("/contact-lenses.arff");
 			reader = new BufferedReader(new FileReader(path));
 		} catch (FileNotFoundException e1) {
 			// TODO Auto-generated catch block
